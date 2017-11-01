@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SuperCrazyGame2DShooter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="viewport-frame">
+        <h1>SuperCrazyGame2DShooter</h1>
+        <canvas id="canvas" width="800" height="600">
+            <div style="text-align: center; vertical-align: middle;">
+                Your browser does not support Canvas technology. Please update it.
+            </div>
+        </canvas>
+    </div>
+    <div id="webgl-err" style="display: none; text-align: center; vertical-align: middle;">
+        Your browser does not support WebGL technology. Please update it.
+    </div>
+    <div id="viewport-info">
+        <div id="configuration">
+            <ul class="list">
+                <li><input id="sensitive" type="range" min="0" max="100" value="50" /></li>
+                <li>
+                    <input type="checkbox" id="sounds"/>
+                    <label for="sounds"><span class="check"></span><b>Sounds volume</b></label>
+                </li>
+                <li><img src="full-screen.svg" id="fullscreenBtn"/><b>Full-screen</b></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
