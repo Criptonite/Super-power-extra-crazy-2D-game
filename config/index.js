@@ -1,5 +1,3 @@
-"use strict";
-
 let nconf = require("nconf");
 let path = require('path');
 
