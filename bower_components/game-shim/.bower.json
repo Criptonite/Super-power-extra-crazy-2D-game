@@ -1,0 +1,13 @@
+{
+  "name": "game-shim",
+  "homepage": "https://github.com/schibir/game-shim",
+  "_release": "0ca41d1e98",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0ca41d1e989c2af27d9d9d2c807c0889fedc21c4"
+  },
+  "_source": "https://github.com/schibir/game-shim.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/schibir/game-shim.git"
+}
