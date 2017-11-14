@@ -11,11 +11,10 @@ I) For linux:
   3) npm i
   4) bower i
   
+  
 II) For Windows:
+
   1)???
-  
   2)???
- 
   3)???
-  
   4)???
