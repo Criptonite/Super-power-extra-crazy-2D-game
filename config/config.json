@@ -1,0 +1,9 @@
+{
+  "master-server":
+  {
+    "port": 80,
+    "port-for-game-server": 8080,
+    "host-for-game-server": "localhost",
+    "timeout-broadcast": 500
+  }
+}

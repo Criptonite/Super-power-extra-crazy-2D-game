@@ -1,0 +1,29 @@
+{
+  "name": "super-power-extra-crazy-game",
+  "description": "University project",
+  "main": "master-server.js",
+  "authors": [
+    "Guba Dmitriy",
+    "Bassin Danil",
+    "Kadirov Ruslan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "SuperGame"
+  ],
+  "homepage": "https://github.com/Criptonite/Super-power-extra-crazy-2D-game",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "game-shim": "https://github.com/schibir/game-shim.git",
+    "howler.js": "^2.0.5",
+    "gl-matrix": "^2.4.0",
+    "jquery": "^3.2.1"
+  }
+}
