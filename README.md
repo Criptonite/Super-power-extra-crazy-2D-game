@@ -13,8 +13,7 @@ I) For linux:
   
   
 II) For Windows:
+  ** NodeJS command promt **
+  1) npm install -g bower
+  2) bower i
 
-  1)???
-  2)???
-  3)???
-  4)???
