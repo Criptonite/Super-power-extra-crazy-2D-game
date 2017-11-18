@@ -1,7 +1,7 @@
 "use strict";
 
 var Console = require("libs/log")(module);
-var config = require("config");
+var config = require("config/index");
 var Event = require("../utils/event").Event;
 var Vector = require("../utils/mathUtil").Vector;
 var Dynent = require("./dynent").Dynent;
