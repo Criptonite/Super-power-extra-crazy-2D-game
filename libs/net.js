@@ -27,7 +27,7 @@ function Server(port) {
 
     };
 
-    this.command = (cmd, addr, callback) => {
+    this.command = (addr, cmd, callback) => {
         if (clients[addr]) {
             clients[addr].callbacks[cmd] = callback;
             clients[addr].socket.write(cmd);
