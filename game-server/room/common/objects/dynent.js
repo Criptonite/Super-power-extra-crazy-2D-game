@@ -16,12 +16,19 @@ function Dynent(pos, size, angle)
 Dynent.prototype.update = function(dt)
 {
     //update
+    this.pos.add(Vector.mul(this.vel, dt));
 }
 
 //return Vector
 Dynent.prototype.collide = function(dyn, size)
 {
     //collide
+    var min_dist = (this.size.x + size) * 0.5;
+
+    var dx = dyn.pos.x - this.pos.x;
+    var dy = dyn.pos.y - this.pos.y;
+    var len2 = dx * dx + dy * dy;
+    return len2 < min_dist * min_dist ? new Vector(dx, dy) : null;
 }
 
 //size - Vector

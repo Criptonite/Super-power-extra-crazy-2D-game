@@ -15,10 +15,32 @@ function GameEvent(type, pos, dir, arg1, arg2)
 }
 
 //event declaration like a template
-Event.on("botrespawn", function(bot)
+Event.on("botspawn", function(bot)
 {
-    bot.game.events.push(new GameEvent(/*event type*/, bot.dynent.pos, null));
+    bot.game.events.push(new GameEvent(EVENT.BOT_SPAWN, bot.dynent.pos, null));
 });
-
+Event.on("damage", function (bot, bullet) {
+    if(bullet){
+     var dir = Vector.sub(bullet.pos, bot.pos);
+     var pos = bullet.pos;
+     bot.game.events.push(new GameEvent(EVENT.DAMAGE, pos, dir, bot.id))
+    }
+})
+Event.on("botdead", function(bot, bullet, killer)
+{
+    bot.game.events.push(new GameEvent(EVENT.BOT_DEAD, bot.dynent.pos, null));
+});
+Event.on("itemspawn", function(bot)
+{
+    bot.game.events.push(new GameEvent(EVENT.BOT_SPAWN, bot.dynent.pos, null));
+});
+Event.on("itemspawn", function(bot)
+{
+    bot.game.events.push(new GameEvent(EVENT.BOT_SPAWN, bot.dynent.pos, null));
+});
+Event.on("takeweapon", function (bot, type, patrons)
+{
+    bot.game.events.push(new GameEvent(EVENT.TAKE_WEAPON, bot.dynent.pos, null));
+});
 
 exports.GameEvent = GameEvent;
